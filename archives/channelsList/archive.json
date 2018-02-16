@@ -1,0 +1,216 @@
+[
+    {
+        "id": "C9498BH8C",
+        "name": "access-requests",
+        "created": 1517874923,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "access-requests",
+        "purpose": {
+            "value": "For requesting and granting access to group resources",
+            "creator": "U93CZR0LR",
+            "last_set": 1517874923
+        },
+        "previous_names": [],
+        "num_members": 36
+    },
+    {
+        "id": "C96PYAY6N",
+        "name": "attachments",
+        "created": 1518195507,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "attachments",
+        "purpose": {
+            "value": "If you are looking to post an attachment in more than one channel, post it here instead. Then direct people here for the discussion so that each channel where it is posted doesnt recieve duplicate comments",
+            "creator": "U940KDSQ3",
+            "last_set": 1518195508
+        },
+        "previous_names": [],
+        "num_members": 3
+    },
+    {
+        "id": "C94SG4VK7",
+        "name": "ballot-box",
+        "created": 1517937977,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "ballot-box",
+        "purpose": {
+            "value": "For voting on and discussing group decisions.",
+            "creator": "U93CZR0LR",
+            "last_set": 1517937977
+        },
+        "previous_names": [],
+        "num_members": 35
+    },
+    {
+        "id": "C93ARTCGG",
+        "name": "community-management",
+        "created": 1517844064,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "community-management",
+        "purpose": {
+            "value": "",
+            "creator": "",
+            "last_set": 0
+        },
+        "previous_names": [],
+        "num_members": 45
+    },
+    {
+        "id": "C93U0SZQB",
+        "name": "content-kiosk",
+        "created": 1517846883,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "content-kiosk",
+        "purpose": {
+            "value": "For sharing links to helpful content",
+            "creator": "U93CZR0LR",
+            "last_set": 1517846883
+        },
+        "previous_names": [],
+        "num_members": 43
+    },
+    {
+        "id": "C93V1MS1J",
+        "name": "dapp-ideas",
+        "created": 1517843116,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "dapp-ideas",
+        "purpose": {
+            "value": "A channel for kicking around new ideas",
+            "creator": "U93CZR0LR",
+            "last_set": 1517843116
+        },
+        "previous_names": [],
+        "num_members": 52
+    },
+    {
+        "id": "C95CY7JEN",
+        "name": "design",
+        "created": 1518021680,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "design",
+        "purpose": {
+            "value": "A place for the graphic designers among us to hang out :slightly_smiling_face:",
+            "creator": "U93CZR0LR",
+            "last_set": 1518021681
+        },
+        "previous_names": [],
+        "num_members": 22
+    },
+    {
+        "id": "C93CZR93K",
+        "name": "general",
+        "created": 1517841871,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "general",
+        "purpose": {
+            "value": "General chat that doesn't fit into other channels.",
+            "creator": "U93CZR0LR",
+            "last_set": 1517843504
+        },
+        "previous_names": [],
+        "num_members": 66
+    },
+    {
+        "id": "C9403E24A",
+        "name": "group-contracts",
+        "created": 1517842905,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "group-contracts",
+        "purpose": {
+            "value": "Discussing our self-governing Solidity contracts",
+            "creator": "U93CZR0LR",
+            "last_set": 1517842905
+        },
+        "previous_names": [],
+        "num_members": 44
+    },
+    {
+        "id": "C94PPRAD8",
+        "name": "group-repos",
+        "created": 1517940065,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "group-repos",
+        "purpose": {
+            "value": "Overall discussion about any group repos. Split into dedicated channels when needed.",
+            "creator": "U93CZR0LR",
+            "last_set": 1517940066
+        },
+        "previous_names": [],
+        "num_members": 29
+    },
+    {
+        "id": "C93U4JT99",
+        "name": "introductions",
+        "created": 1517847182,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "introductions",
+        "purpose": {
+            "value": "Tell the group a little bit about yourself. To add more info, consider editing your original post or adding to its thread.",
+            "creator": "U93CZR0LR",
+            "last_set": 1517848531
+        },
+        "previous_names": [],
+        "num_members": 54
+    },
+    {
+        "id": "C941CS55H",
+        "name": "needhelp",
+        "created": 1517854812,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "needhelp",
+        "purpose": {
+            "value": "questions about blockchains, programming and random discussions for specific problems",
+            "creator": "U93V0USBE",
+            "last_set": 1517854813
+        },
+        "previous_names": [],
+        "num_members": 38
+    },
+    {
+        "id": "C953DAS2H",
+        "name": "off-topic",
+        "created": 1517958199,
+        "last_message": null,
+        "last_archive": null,
+        "name_normalized": "off-topic",
+        "purpose": {
+            "value": "Just for having fun",
+            "creator": "U93CZR0LR",
+            "last_set": 1517958199
+        },
+        "previous_names": [],
+        "num_members": 17
+    },
+    {
+        "id": "C95HEF336",
+        "name": "social-media",
+        "created": 1518036074,
+        "last_message": {
+            "time": 1518036074,
+            "user_name": "manchaary",
+            "text": "some text"
+        },
+        "last_archive": 1518036074,
+        "name_normalized": "social-media",
+        "purpose": {
+            "value": "For discussion on managing our social media presence",
+            "creator": "U93CZR0LR",
+            "last_set": 1518036074
+        },
+        "previous_names": [],
+        "num_members": 12
+    }
+]

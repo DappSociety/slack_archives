@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>DappSociety Slack #introductions</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/offcanvas.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<main role="main" class="container">
+				<div class="d-flex align-items-center p-3 my-3 text-white-50 bg-dark rounded box-shadow">
+					<img class="mr-3" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20preserveAspectRatio%3D%22none%22%3E%3Cg%20id%3D%22holder_16167d2231d%22%3E%3Crect%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20fill%3D%22%23343a40%22%2F%3E%3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20x%3D%228%22%20y%3D%228%22%20rx%3D%224%22%20ry%3D%224%22%20fill%3D%22transparent%22%20stroke-width%3D%222%22%20stroke%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+					 alt="" width="48" height="48">
+					<div class="lh-100">
+						<h6 class="mb-0 text-white lh-100">DappSociety Slack Archive</h6>
+						<small>...</small>
+					</div>
+				</div>
+				<div id="channelsList">
+					<div class="input-group input-group-sm mb-3">
+						<select class="custom-select" v-on:change="changeItem">
+							<option selected>Choose channel...</option>
+							<option v-for="(channel, index) in channels" :value="index">#{{ channel.name }}</option>
+						</select>
+						<div class="input-group-append">
+							<button class="btn btn-outline-dark" type="button">Update list</button>
+						</div>
+					</div>
+					<div class="card mb-3" v-if="activeChannel">
+						<div class="card-header">#{{ activeChannel.name_normalized }}</div>
+						<div class="card-body">
+							<h6 class="card-title mb-1">Last archive (UTC):</h6>
+							<div class="card-text pb-1 border-bottom">{{ activeChannel.last_archive ? activeChannel.last_archive : 'none'}}</div>
+							<div v-if="activeChannel.last_message" class="mt-2">
+								<h6 class="card-title mb-1">Last message in archive</h6>
+								<div class="text-muted">
+									<div class="card-text">{{ activeChannel.last_message.user }} {{ activeChannel.last_message.ts }}</div>
+									<div class="card-text pb-1 border-bottom">{{ activeChannel.last_message.text }}</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer text-right">
+							<button type="button" class="btn btn-sm btn-outline-dark">Update archive</button>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/App/Main.js"></script>
+</body>
+
+</html>
