@@ -18,6 +18,7 @@ var channelsList = new Vue({
 					if(res.ok) {
 						self.activeChannel = self.channels[event.target.value];
 						self.activeChannel.last_message = res.messages[0];
+						self.activeChannel.last_archive = res.last_archive || null;
 					}
 				}
 			});

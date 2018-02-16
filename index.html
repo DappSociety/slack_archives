@@ -35,7 +35,7 @@
 						<div class="card-header">#{{ activeChannel.name_normalized }}</div>
 						<div class="card-body">
 							<h6 class="card-title mb-1">Last archive (UTC):</h6>
-							<div class="card-text pb-1 border-bottom">{{ activeChannel.last_archive ? activeChannel.last_archive : 'none'}}</div>
+							<div class="card-text pb-1 border-bottom">{{ activeChannel.last_archive ? new Date(activeChannel.last_archive * 1000) : 'none'}}</div>
 							<div v-if="activeChannel.last_message" class="mt-2">
 								<h6 class="card-title mb-1">Last message in archive</h6>
 								<div class="text-muted">

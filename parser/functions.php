@@ -12,6 +12,7 @@
 		exclude_members => true  
 
 */
+date_default_timezone_set('UTC');
 function getArchive($options) {
 	$archive_name = !empty($options['channel']) ? $options['archive_name'] . '/' . $options['channel'] : $options['archive_name'];
 	$json_data = requestArchiveFromFile($archive_name);
@@ -61,7 +62,9 @@ function requestJSONResponse($options = [], $method) {
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     $result = curl_exec($ch);
 	curl_close($ch);
-	return $result;
+	$data = json_decode($result, true);
+	$data['last_archive'] = strtotime('now');
+	return json_encode($data);
 }
 function createArchiveFile($archive_name, $json_data) {
 	if(!is_dir(dirname(__FILE__).'/../archives/'.$archive_name.'/')) mkdir(dirname(__FILE__).'/../archives/'.$archive_name.'/',0755,true);
