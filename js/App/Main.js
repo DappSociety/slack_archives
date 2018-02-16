@@ -7,7 +7,7 @@ var channelsList = new Vue({
 	methods: {
 		changeItem(event) {
 			var self = this;
-			// this.activeChannel = this.channels[event.target.value];
+			if (typeof this.channels[event.target.value] == 'undefined') return false;
 			$.ajax({
 				url: 'http://manch.pw/dappsociety/introparser/a/parser/',
 				type: 'POST',
@@ -31,7 +31,7 @@ var channelsList = new Vue({
 			dataType: 'json',
 			data: { archive_name: 'channelsList' },
 			success: function (res) {
-				console.log(res);
+				// console.log(res);
 				if (res.ok) {
 					self.channels = res.channels;
 				}
