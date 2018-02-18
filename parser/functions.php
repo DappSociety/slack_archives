@@ -52,7 +52,7 @@ function requestChannelsArchive($options) {
 }
 function requestJSONResponse($options = [], $method) {
 	if(empty($method)) exit('method can not be empty');
-	if(empty($options['token'])) $options['token'] = "xoxp-309340015120-309454432033-311952132791-3842d11bc26080847d8d624dc5b38b3a";
+	if(empty($options['token'])) $options['token'] = 'your_api_key';
 
 	$ch = curl_init("https://slack.com/api/".$method);
 	$data = http_build_query($options);
